@@ -34,7 +34,6 @@ export const VideoJS = () => {
 							label: "HD",
 						},
 					],
-					plugins: {},
 				},
 				() => {
 					console.log("player is ready");
@@ -45,47 +44,30 @@ export const VideoJS = () => {
 				sources: [
 					{
 						format: "highres",
-						src: "assets/ForBiggerEscapes.mp4",
+						src: "assets/video-2.mp4",
 						type: "video/mp4",
 					},
 					{
-						format: "hd1080",
-						src: "assets/big_buck_bunny_720p_2mb.mp4",
+						format: "720p",
+						src: "assets/video-1.mp4",
 						type: "video/mp4",
 					},
 					{
-						format: "hd720",
-						src: "assets/ForBiggerEscapes.mp4",
-						type: "video/mp4",
-					},
-					{
-						format: "large",
-						src: "assets/big_buck_bunny_720p_2mb.mp4",
-						type: "video/mp4",
-					},
-					{
-						format: "medium",
-						src: "assets/ForBiggerEscapes.mp4",
-						type: "video/mp4",
-					},
-					{
-						format: "small",
-						src: "assets/big_buck_bunny_720p_2mb.mp4",
+						format: "360p",
+						src: "assets/video-1-low.mp4",
 						type: "video/mp4",
 					},
 					{
 						format: "auto",
-						src: "assets/ForBiggerEscapes.mp4",
+						src: "assets/video-2.mp4",
 						type: "video/mp4",
+						selected: true,
 					},
 				],
 				formats: [
 					{ code: "highres", name: "High" },
-					{ code: "hd1080", name: "1080p" },
-					{ code: "hd720", name: "720p" },
-					{ code: "large", name: "480p" },
-					{ code: "medium", name: "360p" },
-					{ code: "small", name: "240p" },
+					{ code: "720p", name: "720p" },
+					{ code: "360p", name: "360p" },
 					{ code: "auto", name: "Auto" },
 				],
 
@@ -93,8 +75,6 @@ export const VideoJS = () => {
 					console.log(format);
 				},
 			});
-
-			console.log({ player, videoRef, videoElement, videojs });
 		}
 
 		return () => {

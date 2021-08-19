@@ -1,4 +1,4 @@
-import VideoPlayer from "./components/VideoJSHook/Hook2";
+import VideoPlayer from "./components/VideoJSOne";
 import "./App.css";
 
 function App() {
