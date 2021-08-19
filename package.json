@@ -1,44 +1,57 @@
 {
-  "name": "react-video-resolution",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@xiaoyexiang/videojs-resolution-switcher-v7": "^1.1.9",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "react-video-js-player": "^1.1.1",
-    "video.js": "^7.14.3",
-    "videojs-qualityselector": "^0.0.4",
-    "videojs-react-enhanced": "^0.3.1",
-    "videojs-resolution-switcher": "^0.4.2",
-    "web-vitals": "^1.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "react-video-resolution",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@craco/craco": "^6.2.0",
+		"@silvermine/videojs-quality-selector": "^1.2.5",
+		"@testing-library/jest-dom": "^5.11.4",
+		"@testing-library/react": "^11.1.0",
+		"@testing-library/user-event": "^12.1.10",
+		"@xiaoyexiang/videojs-resolution-switcher-v7": "^1.1.9",
+		"gh-pages": "^3.2.3",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-scripts": "4.0.3",
+		"react-video-js-player": "^1.1.1",
+		"react-videojs-hook": "^1.0.1",
+		"video.js": "^7.14.3",
+		"videojs-contrib-quality-levels": "^2.1.0",
+		"videojs-hls-quality-selector": "^1.1.4",
+		"videojs-quality-selector-plugin": "^1.0.2",
+		"videojs-qualityselector": "^0.0.4",
+		"videojs-react-enhanced": "^0.3.1",
+		"videojs-resolution-switcher": "^0.4.2",
+		"web-vitals": "^1.0.1"
+	},
+	"scripts": {
+		"start": "craco start",
+		"build": "craco build",
+		"test": "craco test",
+		"eject": "react-scripts eject",
+		"deploy": "gh-pages -d build"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"autoprefixer": "9",
+		"postcss": "7",
+		"tailwindcss": "npm:@tailwindcss/postcss7-compat"
+	}
 }

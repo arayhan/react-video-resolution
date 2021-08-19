@@ -1,10 +1,13 @@
-import VideoPlayer from "./components/VideoJSOne";
+import VideoPlayer from "./components/VideoJSHook/Hook2";
 import "./App.css";
 
 function App() {
 	return (
-		<div className="App">
-			<VideoPlayer />
+		<div className="App max-w-screen-md mx-auto p-10">
+			<h1 className="text-center text-2xl">VideoJS</h1>
+			<div className="w-full">
+				<VideoPlayer />
+			</div>
 		</div>
 	);
 }
