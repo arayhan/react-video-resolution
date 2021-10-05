@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import videojs from "video.js";
 import VideoPlayer from "react-video-js-player";
 
 const VideoJSTwo = () => {
@@ -6,7 +7,7 @@ const VideoJSTwo = () => {
 	const [player, setPlayer] = useState({});
 
 	const video = {
-		src: "assets/ForBiggerEscapes.mp4",
+		src: "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1920_18MG.mp4",
 		poster: "assets/poster.jpg",
 	};
 

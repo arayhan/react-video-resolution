@@ -16,6 +16,7 @@ export const VideoJS = () => {
 			player = videojs(
 				videoElement,
 				{
+					playbackRates: [0.5, 1, 1.5, 2],
 					autoplay: true,
 					controls: true,
 					responsive: true,
